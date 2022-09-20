@@ -19,7 +19,7 @@ def lines():
 
 
 def word():
-    return "Number of times the word corona appears :", str(open("poem.txt").read().lower().count("corona"))
+    return "Number of times the word corona appears : ", str(open("poem.txt").read().lower().count("corona"))
 
 
 def dispS():
@@ -29,7 +29,7 @@ def dispS():
 
 
 def COUNTSIZE():
-    return "Size of file is", str(len(open("poem.txt").read()))
+    return "Size of file is ", str(len(open("poem.txt").read()))
 
 
 def ATOEDISP1():
@@ -41,13 +41,13 @@ def ATOEDISP2():
 
 while True:
     print("""
-    1. Count the number of lines in "POEM.txt" that begins using upper case
-    2. Read lines from the file "POEM.txt" and count how many how many times the word "corona" exists in file
-    3. Read the text file "POEM.txt" and display those lines that start with "S"
-    4. Read the file "POEM.txt" and display size of the file
-    5. Read the file "NEWS.txt" and display "E" in place of all the occurence of "A" in the word COMPUTER
-    6. Read the file "NEWS.txt" and display "E" in place of all the occurence of "A"
-    0. Exit
+1. Count the number of lines in "POEM.txt" that begins using upper case
+2. Read lines from the file "POEM.txt" and count how many how many times the word "corona" exists in file
+3. Read the text file "POEM.txt" and display those lines that start with "S"
+4. Read the file "POEM.txt" and display size of the file
+5. Read the file "NEWS.txt" and display "E" in place of all the occurence of "A" in the word COMPUTER
+6. Read the file "NEWS.txt" and display "E" in place of all the occurence of "A"
+0. Exit
     """)
 
     ch = int(input("Enter your choice: "))
