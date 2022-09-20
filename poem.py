@@ -15,7 +15,7 @@ def lines():
     for i in open("poem.txt").readlines():
         if i[0].isupper() == True:
             c += 1
-    return "Lines starting from capital letters :", c
+    return ("Lines starting from capital letters :", c)
 
 
 def word():
@@ -53,7 +53,7 @@ while True:
     ch = int(input("Enter your choice: "))
 
     if ch == 1:
-        print(lines())
+        print(lines()[0])
 
     elif ch == 2:
         print(word())
