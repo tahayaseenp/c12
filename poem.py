@@ -15,11 +15,11 @@ def lines():
     for i in open("poem.txt").readlines():
         if i[0].isupper() == True:
             c += 1
-    return ("Lines starting from capital letters :", c)
+    return "Lines starting from capital letters : ", str(c)
 
 
 def word():
-    return "Number of times the word corona appears :", open("poem.txt").read().lower().count("corona")
+    return "Number of times the word corona appears :", str(open("poem.txt").read().lower().count("corona"))
 
 
 def dispS():
@@ -29,7 +29,7 @@ def dispS():
 
 
 def COUNTSIZE():
-    return "Size of file is", len(open("poem.txt").read())
+    return "Size of file is", str(len(open("poem.txt").read()))
 
 
 def ATOEDISP1():
@@ -53,16 +53,16 @@ while True:
     ch = int(input("Enter your choice: "))
 
     if ch == 1:
-        print(lines())
+        print(lines()[0] + lines()[1])
 
     elif ch == 2:
-        print(word())
+        print(word()[0] + word()[1])
 
     elif ch == 3:
         dispS()
 
     elif ch == 4:
-        print(COUNTSIZE())
+        print(COUNTSIZE()[0] + COUNTSIZE()[1])
 
     elif ch == 5:
         print(ATOEDISP1())
