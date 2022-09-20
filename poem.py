@@ -33,7 +33,7 @@ def COUNTSIZE():
 
 
 def ATOEDISP1():
-    return open("news.txt").read().replace("COMPUTARS", "COMPUTERS")
+    return open("news.txt").read().replace("COMPUTAR*", "COMPUTER*")
 
 
 def ATOEDISP2():
