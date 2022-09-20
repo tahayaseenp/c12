@@ -39,6 +39,7 @@ def ATOEDISP1():
 def ATOEDISP2():
     return open("news.txt").read().replace("A", "E")
 
+
 while True:
     print("""
 1. Count the number of lines in "POEM.txt" that begins using upper case
