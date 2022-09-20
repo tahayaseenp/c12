@@ -31,8 +31,22 @@ def COUNTSIZE():
 
 
 def ATOEDISP1():
-    return open("news.txt").read().replace("COMPUTARS", "COMPUTERS")    
+    return open("news.txt").read().replace("COMPUTARS", "COMPUTERS")
 
 
 def ATOEDISP2():
-    return open("news.txt").read().replace("A", "E")    
+    return open("news.txt").read().replace("A", "E")
+
+print("""
+1. Count the number of lines in "POEM.txt" that begins using upper case
+2. Read lines from the file "POEM.txt" and count how many how many times the word "corona" exists in file
+3. Read the text file "POEM.txt" and display those lines that start with "S"
+4. Read the file "POEM.txt" and display size of the file
+5. Read the file "NEWS.txt" and display "E" in place of all the occurence of "A" in the word COMPUTER
+6. Read the file "NEWS.txt" and display "E" in place of all the occurence of "A"
+""")
+
+ch = int(input("Enter your choice: "))
+
+if ch == 1:
+    
