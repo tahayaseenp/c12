@@ -118,8 +118,20 @@ print(fobj.tell())
 seek=fobj.seek(0)
 print("\n\nAfter seek(0): \n", fobj.read())
 fobj.close()
-"""
-fobj=open("NEW TEXT FILE 1.txt", 'rb+')
-fobj.seek(10)
+
+fobj=open("NEW TEXT FILE 1.txt", 'r+b')
+fobj.seek(1)
 fobj.seek(3,1)
+print(fobj.tell())
 print(fobj.read())
+"""
+
+"""
+r  mode - by default, read the file content if the file exists. Otherwise, throws a FileNotFoundError
+r+ mode - read/write the file if the file exists, otherwise FileNotFoundError
+w  mode - overwrite the file content if the file exists, or create a new file
+w+ mode - read/overwrite the file contents if the file exists, or create a new file
+a  mode - appends the file content if the file exists, or create a new file
+a+ mode - read/append the file content if the file exists, or create a new file
+"""
+
