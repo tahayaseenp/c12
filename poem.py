@@ -72,3 +72,6 @@ while True:
 
     elif ch == 0:
         sys.exit("Thank You!")
+
+    else:
+        print("Wrong option!")
