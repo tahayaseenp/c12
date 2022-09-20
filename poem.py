@@ -53,7 +53,7 @@ while True:
     ch = int(input("Enter your choice: "))
 
     if ch == 1:
-        print(lines()[0])
+        print(lines())
 
     elif ch == 2:
         print(word())
