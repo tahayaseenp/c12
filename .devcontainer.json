@@ -7,12 +7,8 @@
     "cs50.lab50",
     "cs50.vscode-presentation-mode",
     "ms-python.python",
-    "ms-vscode.cpptools",
     "ms-vscode.hexeditor",
-    "ms-vsliveshare.vsliveshare-pack",
-    "redhat.java",
     "tomoki1207.pdf",
-    "vscjava.vscode-java-debug",
     "vsls-contrib.gitdoc"
   ],
   "image": "ghcr.io/cs50/codespace:892a47376b4e621c65a277b9e25ee752465b1e5a",
