@@ -26,5 +26,23 @@ def read():
     r = csv.reader(file)
     for i in r: print(i)
 
+while True:
+    print("""
+1. Write data to CSV file
+2. Read data from CSV file
+0. Exit
+    """)
 
-sys.exit("Thank You!")
+    ch = int(input("Enter your choice: "))
+
+    if ch == 1:
+        write()
+
+    elif ch == 2:
+        read()
+
+    elif ch == 0:
+        sys.exit("Thank You!")
+
+    else:
+        print("Wrong option!")
