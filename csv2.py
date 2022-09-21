@@ -2,7 +2,7 @@
 import csv
 
 
-def input():
+def em_in():
     while True:
         emno = int(input("Enter employee ID: "))
         name = input("Enter employee name: ")
@@ -19,5 +19,5 @@ w.writerow(["Employee ID", "Employee Name", "Employee Salary", "Employee Departm
 file.close()
 file = open("employee.csv", "a")
 w = csv.writer(file)
-input()
+em_in()
 file.close()
